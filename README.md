@@ -26,7 +26,7 @@ bash <(wget --no-check-certificate -qO- wget https://git.io/Kernel.sh)
  去查看锐速版本库发现有个内核版本很接近 2.6.32-573.1.1.el6.x86_64 .  
  执行安装命令:  
 ```
-bash <(wget --no-check-certificate -qO-  https://git.io/lotServerInstall.sh) install 3.10.0-957.el7.x86_64
+bash <(wget --no-check-certificate -qO-  https://raw.githubusercontent.com/Zxilly/LotServer/master/lotServerInstall.sh) install 3.10.0-957.el7.x86_64
 ```
  > 锐速安装脚本就会强制安装内核版本为 2.6.32-573.1.1.el6.x86_64 的锐速.  
  安装命令中的 2.6.32-573.1.1.el6.x86_64 可自行更改.  
@@ -40,17 +40,17 @@ bash <(wget --no-check-certificate -qO-  https://git.io/lotServerInstall.sh) ins
  ~~（脚本内置许可证的接口为我自己的接口了，有效期9999年那种 笑）~~
  > 常规自动安装（推荐，自动检测内核）
 ```
-bash <(wget --no-check-certificate -qO-  https://git.io/lotServerInstall.sh) install
+bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/Zxilly/LotServer/master/lotServerInstall.sh) install
 ```
 
  > 指定内核安装
 ```
-bash <(wget --no-check-certificate -qO-  https://git.io/lotServerInstall.sh) install <Kernel Version>
+bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/Zxilly/LotServer/master/lotServerInstall.sh) install <Kernel Version>
 ```
 
  > 完全卸载
 ```
-bash <(wget --no-check-certificate -qO-  https://git.io/lotServerInstall.sh) uninstall
+bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/Zxilly/LotServer/master/lotServerInstall.sh) uninstall
 ```
 ***
 ***
@@ -133,15 +133,15 @@ yum install -y xz openssl gawk file
 ````
 安装debian9 (-firmware 额外驱动支持)
 ````
-bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/fei5seven/lotServer/master/InstallNET/InstallNET.sh') -d 9 -v 64 -a -firmware
+bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/Zxilly/LotDerver/master/InstallNET/InstallNET.sh') -d 9 -v 64 -a -firmware
 ````
 安装ubuntu16.04 (-firmware 额外驱动支持)
 ````
-bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/fei5seven/lotServer/master/InstallNET/InstallNET.sh') -u 16.04 -v 64 -a -firmware
+bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/Zxilly/LotDerver/master/InstallNET/InstallNET.sh') -u 16.04 -v 64 -a -firmware
 ````
 安装ubuntu18.04 (-firmware 额外驱动支持)
 ````
-bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/fei5seven/lotServer/master/InstallNET/InstallNET.sh') -u 18.04 -v 64 -a -firmware
+bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/Zxilly/LotServer/master/InstallNET/InstallNET.sh') -u 18.04 -v 64 -a -firmware
 ````
 说明：
 bash InstallNET.sh      -d/--debian [dist-name]
